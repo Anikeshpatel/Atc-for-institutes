@@ -1,1 +1,1 @@
-"# Atc - App for India's institutes" 
+# Atc - App for India's institutes
