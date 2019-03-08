@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            app:cardElevation="5dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/bg_round_list">
+
+            <FrameLayout android:layout_width="match_parent"
+                         android:layout_height="wrap_content">
+                <ImageView
+                        android:id="@+id/branchImageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/cs"
+                        android:scaleType="centerCrop"
+                />
+
+                <TextView
+                        android:id="@+id/branchView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Computer Science"
+                        android:textSize="24sp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_margin="20dp"
+                />
+
+            </FrameLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="10dp">
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/sem1View"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="I - 45"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimary"
+                    />
+
+                    <TextView
+                            android:id="@+id/sem5View"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="V - 45"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimary"
+                    />
+
+                </LinearLayout>
+
+                <!--<TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Semesters"
+                          android:textColor="@color/colorPrimary"
+                          android:textSize="30sp"
+                          android:textAlignment="center"
+                          android:layout_weight="1"
+                          android:layout_gravity="center"
+                />-->
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/sem2View"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="II - 45"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimary"
+                    />
+
+                    <TextView
+                            android:id="@+id/sem6View"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="VI - 45"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimary"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/sem3View"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="III - 45"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimary"
+                    />
+
+                    <TextView
+                            android:id="@+id/sem7View"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="VII - 45"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimary"
+                    />
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                    <TextView
+                            android:id="@+id/sem4View"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="IV - 45"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimary"
+                    />
+
+                    <TextView
+                            android:id="@+id/sem8View"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="VIII - 45"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorPrimary"
+                    />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

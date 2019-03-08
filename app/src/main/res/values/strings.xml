@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Atc</string>
+
+    <array name="branches">
+        <item>Branch</item>
+        <item>CS</item>
+        <item>ME</item>
+        <item>CE</item>
+        <item>EC</item>
+        <item>CS</item>
+    </array>
+</resources>

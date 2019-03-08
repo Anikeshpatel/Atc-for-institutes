@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:padding="20dp"
+              android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Admin Login"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorDark"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/harlow_solid_plain"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+            />
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/adminIdInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Admin Id"
+                    android:inputType="text"
+            />
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/adminPasswordInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Passcode"
+                    android:inputType="textPassword"
+                    android:layout_marginTop="10dp"
+            />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/adminLoginBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/lato_regular"
+                    android:background="@drawable/bg_round_btn"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
+            />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

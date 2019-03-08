@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        tools:context=".activities.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_wrapper"
+            android:elevation="2dp">
+
+        <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="2dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:text="@string/app_name"
+                      android:textSize="25sp"
+                      android:fontFamily="@font/harlow_solid_plain"
+                      android:layout_gravity="center"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_weight="1">
+
+                    <FrameLayout
+                            android:id="@+id/listRecordBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_round_main">
+
+                        <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/ic_list"
+                                android:layout_gravity="center|top"
+                                android:layout_marginTop="20dp"
+                        />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="List Record"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="25sp"
+                                android:fontFamily="@font/harlow_solid_plain"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:layout_marginBottom="20dp"
+                        />
+
+                    </FrameLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_weight="1">
+
+                    <FrameLayout
+                            android:id="@+id/todayStrengthBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_round_main">
+
+                        <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/ic_students"
+                                android:layout_gravity="center|top"
+                                android:layout_marginTop="20dp"
+                        />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Today Strength"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="25sp"
+                                android:fontFamily="@font/harlow_solid_plain"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:layout_marginBottom="20dp"
+                        />
+
+                    </FrameLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_weight="1">
+
+                    <FrameLayout
+                            android:id="@+id/facultyListBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_round_main">
+
+                        <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/ic_faculties"
+                                android:layout_gravity="center|top"
+                                android:layout_marginTop="20dp"
+                        />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="All Faculties"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="25sp"
+                                android:fontFamily="@font/harlow_solid_plain"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:layout_marginBottom="20dp"
+                        />
+
+                    </FrameLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_weight="1">
+
+                    <FrameLayout
+                            android:id="@+id/settingBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_round_main">
+
+                        <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/ic_setting"
+                                android:layout_gravity="center|top"
+                                android:layout_marginTop="20dp"
+                        />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Setting"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="25sp"
+                                android:fontFamily="@font/harlow_solid_plain"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:layout_marginBottom="20dp"
+                        />
+
+                    </FrameLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_weight="1">
+
+                    <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_round_main">
+
+                        <TextView
+                                android:id="@+id/totalView"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:text="fetching .."
+                                android:textColor="@color/colorPrimary"
+                                android:autoSizeTextType="uniform"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:textAlignment="center"
+                                android:fontFamily="@font/harlow_solid_plain"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                android:layout_marginBottom="20dp"
+                        />
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Total"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="25sp"
+                                android:fontFamily="@font/harlow_solid_plain"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:layout_marginBottom="20dp"
+                        />
+
+                    </FrameLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="180dp"
+                        android:layout_height="200dp"
+                        android:layout_margin="10dp"
+                        app:cardElevation="5dp"
+                        app:cardCornerRadius="20dp"
+                        android:layout_weight="1">
+
+                    <FrameLayout
+                            android:id="@+id/logOutBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_round_main">
+
+                        <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:src="@drawable/ic_exit"
+                                android:layout_gravity="center|top"
+                                android:layout_marginTop="20dp"
+                        />
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Logout"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="25sp"
+                                android:fontFamily="@font/harlow_solid_plain"
+                                android:layout_gravity="center_horizontal|bottom"
+                                android:layout_marginBottom="20dp"
+                        />
+
+                    </FrameLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
